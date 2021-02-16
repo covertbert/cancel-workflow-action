@@ -5897,6 +5897,7 @@ async function main() {
                 console.log("ignore_sha", ignore_sha);
                 console.log("run.head_sha", run.head_sha);
                 console.log("headSha", headSha);
+                console.log("run.status", run.status);
                 console.log("new Date(run.created_at) < new Date(current_run.created_at)", new Date(run.created_at) < new Date(current_run.created_at));
                 return ((ignore_sha || run.head_sha !== headSha) &&
                     run.status !== "completed" &&
