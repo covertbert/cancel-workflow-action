@@ -64,6 +64,7 @@ async function main() {
       console.log(branchWorkflows.map(run => `- ${run.html_url}`).join('\n'));
 
       const runningWorkflows = branchWorkflows.filter((run) => {
+        console.log('ID', run.id);
         console.log("ignore_sha || run.head_sha !== headSha", ignore_sha || run.head_sha !== headSha);
         console.log("ignore_sha", ignore_sha);
         console.log("run.head_sha", run.head_sha);
